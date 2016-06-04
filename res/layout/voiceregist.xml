@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/showMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+     <TextView
+        android:id="@+id/showPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+     
+     
+    <EditText
+        android:id="@+id/edt_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/showRegFbk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+     
+     
+    <Button
+        android:id="@+id/regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置声纹" />
+    
+     <Button
+        android:id="@+id/isv_getpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取密码" />
+     
+       <Button
+        android:id="@+id/delete_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除声纹" />
+   
+  
+
+</LinearLayout>

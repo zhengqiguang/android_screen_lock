@@ -36,7 +36,6 @@ import android.widget.Toast;
 public class voiceregist extends Activity implements OnClickListener 
 {
 	private String mAuthId = "hahaha233";
-//	private String mAuthId = Secure.getString(getBaseContext().getContentResolver(), Secure.ANDROID_ID);
 	private SpeakerVerifier mVerifier;
 	private TextView mShowPwdTextView;
 	private TextView mShowMsgTextView;
@@ -64,6 +63,9 @@ public class voiceregist extends Activity implements OnClickListener
 		findViewById(R.id.regist).setOnClickListener(voiceregist.this);
 		findViewById(R.id.isv_getpassword).setOnClickListener(voiceregist.this);
 		findViewById(R.id.delete_voice).setOnClickListener(voiceregist.this);
+		
+		String t = Secure.getString(getBaseContext().getContentResolver(), Secure.ANDROID_ID);
+		mAuthId = "a" + t.substring(t.length()-10);
 		
 		
 		mVerifier = SpeakerVerifier.createVerifier(voiceregist.this, new InitListener() {

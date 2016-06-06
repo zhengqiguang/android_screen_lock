@@ -37,6 +37,7 @@
     <!-- 读取联系人权限，上传联系人需要用到此权限 -->
 	14. 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"

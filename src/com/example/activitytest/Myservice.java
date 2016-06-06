@@ -95,6 +95,12 @@ public class Myservice extends Service{
 	
 	@Override
 	public void onDestroy(){
+		if(FirstActivity.t ==true)
+		{
+			super.onDestroy();
+			return;
+		}
+		
 		Toast.makeText(Myservice.this, "onDestroy...", 
 				Toast.LENGTH_SHORT).show();
 		super.onDestroy();

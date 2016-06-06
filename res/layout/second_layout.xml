@@ -23,7 +23,8 @@
            android:layout_alignParentLeft="true"
            android:ems="10"
            android:inputType="numberPassword" />
-
+       
+		
        <Button
            android:id="@+id/judge_voice"
            android:layout_width="match_parent"
@@ -40,7 +41,16 @@
            android:layout_alignParentLeft="true"
            android:layout_centerVertical="true"
            android:text="密码解锁" />
-
+       
+        <Button
+           android:id="@+id/emergency_call"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
+           android:text="紧急电话" />
+        
        <TextView
            android:id="@+id/showMsg"
            android:layout_width="match_parent"
@@ -57,5 +67,16 @@
            android:layout_alignParentTop="true"
            android:layout_marginTop="17dp"
            android:textSize="32dp" />
+
+       <EditText
+           android:id="@+id/emergency_call_number"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/showMsg"
+           android:hint="请输入电话"
+           android:ems="10"
+           android:inputType="phone" />
 
 </RelativeLayout>

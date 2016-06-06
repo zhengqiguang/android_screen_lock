@@ -19,6 +19,7 @@ import android.widget.Toast;
 public class FirstActivity extends Activity{
 	private EditText setEdit_chpassword;
 	private Button saveButton_chpassword;
+	static boolean t=false;
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
@@ -82,8 +83,11 @@ public class FirstActivity extends Activity{
 		emergency.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v){
-				Toast.makeText(FirstActivity.this, "emergency call ...", 
-						Toast.LENGTH_SHORT).show();
+			//	Toast.makeText(FirstActivity.this, "emergency call ...", 
+			//			Toast.LENGTH_SHORT).show();
+				
+				
+				
 				//voice.call_number();
 			}
 		});

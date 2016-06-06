@@ -13,6 +13,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings.Secure;
@@ -53,7 +54,7 @@ public class SecondActivity extends Activity
 		String t = Secure.getString(getBaseContext().getContentResolver(), Secure.ANDROID_ID);
 		mAuthId = "a" + t.substring(t.length()-10);
 		
-		Toast.makeText(SecondActivity.this, "ID: " + mAuthId, Toast.LENGTH_SHORT).show();
+	//	Toast.makeText(SecondActivity.this, "ID: " + mAuthId, Toast.LENGTH_SHORT).show();
 		
 		
 		mVerifier = SpeakerVerifier.createVerifier(SecondActivity.this, new InitListener() {
@@ -68,6 +69,8 @@ public class SecondActivity extends Activity
 			}
 		});
 		
+		
+		final EditText emergency_call_number = (EditText)findViewById(R.id.emergency_call_number);
 		
 		
 		
@@ -126,6 +129,21 @@ public class SecondActivity extends Activity
 			}
 		});
 
+		
+		final Button emerg = (Button) findViewById(R.id.emergency_call);
+		emerg.setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v){
+				Toast.makeText(SecondActivity.this, "calling...", 
+						Toast.LENGTH_SHORT).show();
+				
+				
+				
+				Intent intent = new Intent(Intent.ACTION_CALL,Uri.parse("tel:"+emergency_call_number.getText().toString()));
+				startActivity(intent);
+			}
+		});
+		
 	}
 	
 	private VerifierListener mVerifyListener = new VerifierListener() {

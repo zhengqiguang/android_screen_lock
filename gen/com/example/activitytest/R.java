@@ -31,26 +31,28 @@ public final class R {
         public static final int voice=0x7f020006;
     }
     public static final class id {
-        public static final int action_settings=0x7f080014;
+        public static final int action_settings=0x7f080016;
         public static final int buttonSafe=0x7f080002;
-        public static final int delete_voice=0x7f080013;
-        public static final int edt_result=0x7f08000f;
+        public static final int delete_voice=0x7f080015;
+        public static final int edt_result=0x7f080011;
         public static final int emergency=0x7f080009;
+        public static final int emergency_call=0x7f08000d;
+        public static final int emergency_call_number=0x7f080010;
         public static final int imageView1=0x7f080001;
         public static final int imageView2=0x7f080000;
         public static final int input_chpassword=0x7f08000a;
-        public static final int isv_getpassword=0x7f080012;
+        public static final int isv_getpassword=0x7f080014;
         public static final int judge_chpassword=0x7f08000b;
         public static final int judge_voice=0x7f08000c;
-        public static final int regist=0x7f080011;
+        public static final int regist=0x7f080013;
         public static final int rl_name=0x7f080003;
         public static final int save_chpassword=0x7f080008;
         public static final int serviceoff=0x7f080005;
         public static final int serviceon=0x7f080004;
         public static final int set_chpassword=0x7f080007;
-        public static final int showMsg=0x7f08000d;
-        public static final int showPwd=0x7f08000e;
-        public static final int showRegFbk=0x7f080010;
+        public static final int showMsg=0x7f08000e;
+        public static final int showPwd=0x7f08000f;
+        public static final int showRegFbk=0x7f080012;
         public static final int voice=0x7f080006;
     }
     public static final class layout {

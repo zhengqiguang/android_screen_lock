@@ -115,7 +115,7 @@ public class FirstActivity extends Activity{
 				Toast.makeText(FirstActivity.this, "service off...", 
 						Toast.LENGTH_SHORT).show();
 				switch(v.getId()){
-				case R.id.serviceon:
+				case R.id.serviceoff:
 					Intent startIntent = new Intent(FirstActivity.this, Myservice.class);
 					stopService(startIntent);
 					default:
